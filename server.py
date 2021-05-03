@@ -8,7 +8,7 @@ port = 50000
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server.bind((host, port))
 server.listen()
-print(f"Serveur en ligne sur le port {host}, sur le port {port}.")
+print(f"Serveur en ligne sur le host {host}, sur le port {port}.")
 
 clients = []
 
