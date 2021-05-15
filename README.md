@@ -1,6 +1,7 @@
 # ReverseShellTool
 
-After downlaoding the file, you just have to open your ports, then change the host and port to your ip and opened port and you just gotta send the victim.pyw file to the victim.
-Once they downloaded and executed it, you will have complete accesss to their command prompt.
+Après avoir téléchargé le fichier, il vous suffit d'ouvrir vos ports, puis de changer l'hôte et le port dans les fichiers à votre ip et votre port ouvert et vous devez simplement envoyer le fichier "victim.pyw" à la victime.
+Une fois qu'ils l'auront téléchargé et éxécuté, vous aurez un accès complet à leur invite de commandes.
 
-I AM NOT RESPONSIBLE FOR YOUR ACTIONS WITH MY TOOL, PLEASE USE IT ONLY FOR EDUCATIONAL PURPOSES
+# Disclaimer
+JE NE SUIS PAS RESPONSABLE DE VOS ACTIONS AVEC MON TOOL, VEUILLEZ L'UTILISER UNIQUEMENT À DES FINS ÉDUCATIVES
