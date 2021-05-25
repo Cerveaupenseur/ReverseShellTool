@@ -2,7 +2,7 @@ import socket
 from threading import Thread
 
 
-host = '192.168.1.1'
+host = 'localhost'
 port = 50000
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
