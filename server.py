@@ -2,7 +2,7 @@ import socket
 from threading import Thread
 
 
-host = 'localhost'
+host = '192.168.1.1'
 port = 50000
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -29,6 +29,18 @@ def gestion(client):
                 break
                 
 
+def cmd():
+    while True:
+        for client in clients:
+            reponse = client.recv(1024)
+            try:
+                print(f"{reponse.decode('cp850')}")
+            except:
+                print(f"{reponse}")
+
+
+
+
 def recoit():
     while True:
 
@@ -40,6 +52,7 @@ def recoit():
 
         thread = Thread(target=gestion, args=(client, ))
         thread.start()
+        Thread(target=cmd).start()
 
 
 recoit()
